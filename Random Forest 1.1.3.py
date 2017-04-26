@@ -97,11 +97,11 @@ def tree_add(x, y, var1_mu, var1_sig, var2_mu, var2_sig):
 	else: #adds a cube
 		bpy.ops.mesh.primitive_cube_add(radius=1, location = (0,0,0)) 
 
-def production_add(obj_position, camera_radius):
+def production_add(camera_radius):
 	if Tree_not_cube:
-		obj_centre = bpy.data.objects['tree'].location
+		obj_position = bpy.data.objects['tree'].location
 	else:
-		obj_centre = bpy.data.objects["Cube"].location
+		obj_position = bpy.data.objects["Cube"].location
 	#find either the random or pre-set camera position
 	if Camera_random:
 		alpha = 2 * pi * randomgen.random()
@@ -230,14 +230,14 @@ for repeats in range(Iterations):
 					makedirs(grid_subdirectory)
 				#adds trees and cameras and environment
 				tree = tree_add(x = x_repeat, y = y_repeat, var1_sig = 5, var1_mu = 15, var2_sig = 3, var2_mu = 1)
-				production_add(obj_position = obj_centre, camera_radius = 22)
+				production_add(camera_radius = 22)
 				environment_add()
 				#render it all
 				render_scene(output_folder = path.join(grid_subdirectory), grid_pos = grid_string, iteration = repeats)
 	else:
 		#adds trees and cameras and environment
 		tree_add(x = 0, y = 0, var1_sig = 0, var1_mu = 0, var2_sig = 0, var2_mu = 0)
-		production_add(obj_position = obj_centre, camera_radius = 22)
+		production_add(camera_radius = 22)
 		environment_add()
 		#render it all
 render_scene(output_folder = run_directory, iteration = repeats)
