@@ -1,4 +1,5 @@
-1) Clone the repo somewhere on your PC
+1) Clone the repo somewhere on your PC using https://github.com/RobWHickman/Summerfield-Lab.git or the GUI
+  1.2) Extract the downloaded file. You can prune away all except the tree_blend folder if you so wish
 2) Install Blender from https://www.blender.org/download/
 3) Run:
 
