@@ -44,4 +44,4 @@ cd "/home/path/to/tree_blend/Scripts"
 current_file = "Random Forest x.y.z"
 blender -b -P ./current_file
 
-Latest version: 1.3.0 (April 26th, 2017)
+Latest version: 1.3.2 (May 9th, 2017)
