@@ -32,6 +32,7 @@ These are then fed through two sets of loops:
 They are outputted to a folder defined by Output_directory in a new folder based upon the system time.
 
 To Run:
+--------------------------------------------------------------------------------
 
 1) Clone the repo somewhere on your PC using https://github.com/RobWHickman/Summerfield-Lab.git or the GUI
   1.2) Extract the downloaded file. You can prune away all except the tree_blend folder if you so wish but
