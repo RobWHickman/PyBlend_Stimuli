@@ -1,0 +1,7 @@
+1) Clone the repo somewhere on your PC
+2) Install Blender from https://www.blender.org/download/
+3) Run:
+
+cd "/home/path/to/tree_blend/Scripts"
+current_file = "Random Forest x.y.z"
+blender -b -P ./current_file
