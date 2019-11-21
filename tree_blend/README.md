@@ -34,16 +34,18 @@ They are outputted to a folder defined by Output_directory in a new folder based
 To Run:
 --------------------------------------------------------------------------------
 
-1) Clone the repo somewhere on your PC using https://github.com/RobWHickman/Summerfield-Lab.git or the GUI
+1) Clone the repo somewhere on your PC using https://github.com/RobWHickman/PyBlend_Stimuli.git or the GUI
   1.2) Extract the downloaded file. You can prune away all except the tree_blend folder if you so wish but
   will need to update the filepaths in the Random Forest script
 2) Install Blender from https://www.blender.org/download/
 3) Run in the command shell:
 
+```
 #change directory to the scripts folder
 cd "/home/path/to/tree_blend/Scripts"
 #run the script through python in blender headless
 #add in numbers for latest file
 blender -b -P ./"Random Forest x.y.z"
+```
 
 Latest version: 1.3.2 (May 9th, 2017)
